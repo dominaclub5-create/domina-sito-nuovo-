@@ -1,0 +1,2731 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DOMINA – Fitness Donna Massafra | EMS, Percorso EMS Statico & Corsi Small Group</title>
+  <meta name="description" content="DOMINA Fitness Donna a Massafra: studio esclusivo per donne. Tecnologia EMS, percorso benessere EMS Statico, Corsi in Small Group, Ginnastica Posturale e percorsi salute." />
+  <meta name="theme-color" content="#5E304C" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Colori Ufficiali DOMINA Social & Brand Identity */
+      --brand-plum: #5E304C;        /* Prugna Nobile Logo */
+      --brand-plum-dark: #3a1a2e;   /* Prugna Intenso Sfondo */
+      --brand-plum-light: #8E4472;  /* Prugna Chiaro Vibrante */
+      --brand-rose: #C96B9D;        /* Rosa Satinato Accento */
+      --brand-rose-glow: #F0A6CC;   /* Rosa Cipria Glow */
+      --brand-rose-soft: #fbebf3;   /* Soft Rose Tint */
+
+      /* Palette Dark Luxury */
+      --bg-deep: #0D0910;
+      --bg-surface: #150E1A;
+      --bg-card: rgba(28, 18, 33, 0.72);
+      --bg-card-hover: rgba(42, 26, 50, 0.88);
+
+      /* Bordi e Riflessi Vetro */
+      --border-subtle: rgba(184, 93, 143, 0.18);
+      --border-focus: rgba(212, 118, 170, 0.45);
+      --glass-gloss: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 100%);
+
+      /* Testi */
+      --text-main: #FAF7F9;
+      --text-muted: #BBA8BC;
+      --text-faint: #816F83;
+
+      /* Altri */
+      --whatsapp: #25D366;
+      --whatsapp-hover: #1EBE5D;
+      --gold: #FFB703;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --maxw: 1180px;
+      --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg-deep);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(94, 48, 76, 0.35) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(142, 68, 114, 0.25) 0%, transparent 45%),
+        radial-gradient(circle at 50% 95%, rgba(94, 48, 76, 0.2) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    /* =========================================
+       HEADER & NAVIGATION
+    ========================================= */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 78px;
+      background: rgba(13, 9, 16, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 999;
+      transition: all 0.3s ease;
+    }
+
+    .header-container {
+      max-width: var(--maxw);
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .brand-logo-img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(201, 107, 157, 0.2));
+      transition: transform 0.25s ease;
+    }
+
+    .brand-link:hover .brand-logo-img {
+      transform: scale(1.03);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-tagline {
+      font-size: 11px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--brand-rose);
+      font-weight: 700;
+    }
+
+    .brand-city {
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 3px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background: rgba(142, 68, 114, 0.15);
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--brand-plum) 0%, var(--brand-plum-light) 60%, var(--brand-rose) 100%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 18px;
+      border-radius: 999px;
+      box-shadow: 0 4px 18px rgba(94, 48, 76, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.25s ease;
+    }
+
+    .header-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(201, 107, 157, 0.55);
+      filter: brightness(1.08);
+    }
+
+    /* =========================================
+       MAIN LAYOUT & BUTTONS
+    ========================================= */
+    main {
+      padding-top: 78px;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--brand-plum) 0%, var(--brand-plum-light) 50%, var(--brand-rose) 100%);
+      color: #fff;
+      padding: 14px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      box-shadow: 0 8px 24px rgba(94, 48, 76, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(184, 93, 143, 0.55);
+      filter: brightness(1.1);
+    }
+
+    .btn.alt {
+      background: rgba(42, 26, 50, 0.55);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      box-shadow: none;
+    }
+
+    .btn.alt:hover {
+      background: rgba(94, 48, 76, 0.3);
+      border-color: var(--brand-rose);
+      color: #fff;
+    }
+
+    .btn.whatsapp-cta {
+      background: #25D366;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn.whatsapp-cta:hover {
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Kicker badge */
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(94, 48, 76, 0.35);
+      border: 1px solid rgba(201, 107, 157, 0.35);
+      color: var(--brand-rose-glow);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .kicker-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--brand-rose);
+      box-shadow: 0 0 10px var(--brand-rose);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Gradient Text */
+    .grad-text {
+      background: linear-gradient(135deg, #FFFFFF 20%, var(--brand-rose-glow) 70%, var(--brand-rose) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* =========================================
+       HERO SECTION
+    ========================================= */
+    .hero-section {
+      padding: 60px 0 90px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.12;
+      margin-bottom: 20px;
+      letter-spacing: -0.8px;
+    }
+
+    .hero-lead {
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+
+    .hero-alert {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(94, 48, 76, 0.25);
+      border-left: 3px solid var(--brand-rose);
+      padding: 10px 16px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      color: #ffd6e8;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .trust-row {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .trust-item strong {
+      color: #fff;
+    }
+
+    .trust-stars {
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    /* Hero Visual Card */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 40px rgba(94, 48, 76, 0.3);
+      background: var(--bg-card);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-focus);
+    }
+
+    .hero-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.95);
+    }
+
+    .hero-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(13, 9, 16, 0.95) 100%);
+      pointer-events: none;
+    }
+
+    .hero-card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px;
+      z-index: 2;
+    }
+
+    .hero-badge-float {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: rgba(13, 9, 16, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-subtle);
+      padding: 8px 14px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-badge-float span {
+      color: var(--brand-rose);
+    }
+
+    .hero-card-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .hero-tag {
+      background: rgba(94, 48, 76, 0.5);
+      border: 1px solid rgba(201, 107, 157, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* =========================================
+       SECTION COMMONS
+    ========================================= */
+    .section-py {
+      padding: 85px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .section-header h2 {
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       PRIMA PROVA (STEP-BY-STEP)
+    ========================================= */
+    .steps-section {
+      background: linear-gradient(180deg, rgba(21, 14, 26, 0.6) 0%, rgba(13, 9, 16, 0.95) 100%);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      position: relative;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      background: var(--bg-card-hover);
+      border-color: var(--brand-rose);
+      box-shadow: 0 16px 36px rgba(94, 48, 76, 0.35);
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand-plum) 0%, var(--brand-rose) 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      box-shadow: 0 4px 15px rgba(201, 107, 157, 0.4);
+    }
+
+    .step-time {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--brand-rose-glow);
+      background: rgba(94, 48, 76, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(201, 107, 157, 0.25);
+    }
+
+    .step-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .step-benefit {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 13px;
+      color: #f1d5e5;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    .steps-reassurance-box {
+      margin-top: 40px;
+      background: rgba(94, 48, 76, 0.2);
+      border: 1px dashed rgba(201, 107, 157, 0.4);
+      border-radius: var(--radius-md);
+      padding: 24px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reassurance-text h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .reassurance-text p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* =========================================
+       FOTO REALI DEGLI AMBIENTI (LO STUDIO)
+    ========================================= */
+    .spaces-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .space-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .space-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--brand-rose);
+      box-shadow: 0 18px 45px rgba(94, 48, 76, 0.35);
+    }
+
+    .space-img-wrap {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .space-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .space-card:hover .space-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .space-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(13, 9, 16, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-subtle);
+      color: var(--brand-rose-glow);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .space-body {
+      padding: 24px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .space-body h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .space-body p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .space-perks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .space-perks li {
+      font-size: 12.5px;
+      color: #e5d5e5;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .space-perks li::before {
+      content: '✦';
+      color: var(--brand-rose);
+      font-size: 11px;
+    }
+
+    /* =========================================
+       PERCORSO EMS Statico SPOTLIGHT SECTION
+    ========================================= */
+    .ems-statico-section {
+      background: linear-gradient(135deg, rgba(42, 18, 48, 0.7) 0%, rgba(13, 9, 16, 0.95) 100%);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .ems-statico-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid rgba(201, 107, 157, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(94, 48, 76, 0.3);
+    }
+
+    .ems-statico-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .ems-statico-img-wrap img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ems-statico-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 22px 0 28px;
+    }
+
+    .ems-statico-feature-card {
+      background: rgba(94, 48, 76, 0.25);
+      border: 1px solid rgba(201, 107, 157, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+    }
+
+    .ems-statico-feature-card h5 {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .ems-statico-feature-card p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    /* EMS statico Subsections & Protocols */
+    .ems-statico-subblock {
+      margin-top: 50px;
+    }
+
+    .ems-statico-subblock-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .ems-statico-subblock-title h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .ems-statico-subblock-title p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .ems-statico-protocols-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .ems-statico-protocol-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ems-statico-protocol-card:hover {
+      border-color: var(--brand-rose);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(94, 48, 76, 0.35);
+    }
+
+    .ems-statico-protocol-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand-plum) 0%, var(--brand-rose) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 15px rgba(94, 48, 76, 0.3);
+    }
+
+    .ems-statico-protocol-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .ems-statico-protocol-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+
+    .ems-statico-protocol-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--brand-rose-glow);
+      background: rgba(201, 107, 157, 0.15);
+      border: 1px solid rgba(201, 107, 157, 0.25);
+      padding: 4px 10px;
+      border-radius: 999px;
+      align-self: flex-start;
+    }
+
+    /* EMS statico vs EMS Compare Box */
+    .ems-statico-compare-box {
+      margin-top: 50px;
+      background: rgba(21, 14, 26, 0.9);
+      border: 1px solid rgba(201, 107, 157, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .ems-statico-compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      margin-top: 24px;
+    }
+
+    .ems-statico-compare-col {
+      background: rgba(28, 18, 33, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px 22px;
+    }
+
+    .ems-statico-compare-col.highlight-col {
+      border-color: rgba(201, 107, 157, 0.5);
+      background: rgba(94, 48, 76, 0.22);
+      box-shadow: 0 8px 24px rgba(94, 48, 76, 0.25);
+    }
+
+    .ems-statico-compare-col h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ems-statico-compare-col p.compare-subtitle {
+      font-size: 13px;
+      color: var(--brand-rose-glow);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .ems-statico-compare-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ems-statico-compare-col ul li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .ems-statico-compare-col ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--brand-rose);
+      font-weight: 700;
+    }
+
+    .ems-statico-synergy-banner {
+      margin-top: 24px;
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, rgba(94, 48, 76, 0.4) 0%, rgba(142, 68, 114, 0.2) 100%);
+      border: 1px dashed var(--brand-rose);
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    /* FAQ Styles */
+    .faq-section {
+      background: rgba(13, 9, 16, 0.9);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 36px;
+    }
+
+    .faq-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+
+    .faq-card:hover {
+      border-color: rgba(201, 107, 157, 0.4);
+      background: var(--bg-card-hover);
+    }
+
+    .faq-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .faq-card h4 .faq-q {
+      color: var(--brand-rose);
+      font-weight: 800;
+    }
+
+    .faq-card p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* =========================================
+       IL TUO TEAM / LE COACH
+    ========================================= */
+    .team-section {
+      background: rgba(21, 14, 26, 0.45);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .coach-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .coach-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--brand-rose);
+      box-shadow: 0 16px 40px rgba(94, 48, 76, 0.35);
+      background: var(--bg-card-hover);
+    }
+
+    .coach-avatar-wrap {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--brand-plum), var(--brand-rose));
+      margin-bottom: 20px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(94, 48, 76, 0.5);
+    }
+
+    .coach-avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .coach-role-badge {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--brand-rose-glow);
+      background: rgba(94, 48, 76, 0.4);
+      border: 1px solid rgba(201, 107, 157, 0.3);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .coach-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .coach-quote {
+      font-size: 14.5px;
+      font-style: italic;
+      color: #f0e1ee;
+      line-height: 1.6;
+      margin: 12px 0 18px;
+      position: relative;
+    }
+
+    .coach-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: auto;
+    }
+
+    .coach-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .promise-card {
+      background: linear-gradient(135deg, rgba(94, 48, 76, 0.3) 0%, rgba(21, 14, 26, 0.8) 100%);
+      border: 1px solid rgba(201, 107, 157, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .promise-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .promise-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0 24px;
+    }
+
+    .promise-list li {
+      font-size: 14.5px;
+      color: #ede2ee;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .promise-list li svg {
+      width: 18px;
+      height: 18px;
+      color: var(--brand-rose);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* =========================================
+       CONVENZIONI Salute & Benessere
+    ========================================= */
+    .network-section {
+      background: linear-gradient(180deg, rgba(21, 14, 26, 0.8) 0%, rgba(13, 9, 16, 0.95) 100%);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .network-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .network-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .network-img-wrap img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .network-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 22px 0 28px;
+    }
+
+    .network-pill {
+      background: rgba(94, 48, 76, 0.25);
+      border: 1px solid rgba(201, 107, 157, 0.25);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      transition: all 0.25s ease;
+    }
+
+    .network-pill:hover {
+      background: rgba(94, 48, 76, 0.45);
+      border-color: var(--brand-rose);
+      transform: translateX(4px);
+    }
+
+    .network-pill h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .network-pill p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* =========================================
+       PILASTRI DEL METODO
+    ========================================= */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand-plum), var(--brand-rose));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-5px);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+      box-shadow: 0 14px 35px rgba(94, 48, 76, 0.25);
+    }
+
+    .pillar-card:hover::before {
+      opacity: 1;
+    }
+
+    .pillar-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(94, 48, 76, 0.4);
+      border: 1px solid rgba(201, 107, 157, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--brand-rose-glow);
+    }
+
+    .pillar-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .pillar-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       SERVIZI GRID
+    ========================================= */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--brand-rose);
+      background: var(--bg-card-hover);
+      box-shadow: 0 16px 36px rgba(94, 48, 76, 0.3);
+    }
+
+    .service-card.highlight {
+      border: 1px solid rgba(201, 107, 157, 0.45);
+      background: linear-gradient(180deg, rgba(46, 22, 53, 0.75) 0%, rgba(28, 18, 33, 0.8) 100%);
+    }
+
+    .service-top {
+      margin-bottom: 20px;
+    }
+
+    .service-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--brand-rose);
+      background: rgba(201, 107, 157, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+
+    .service-card h4 {
+      font-size: 21px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .service-bullets {
+      list-style: none;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .service-bullets li {
+      font-size: 13px;
+      color: #dfcfde;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .service-bullets li::before {
+      content: '✓';
+      color: var(--brand-rose);
+      font-weight: 800;
+    }
+
+    .service-link {
+      color: var(--brand-rose-glow);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s ease;
+    }
+
+    .service-link:hover {
+      gap: 10px;
+      color: #fff;
+    }
+
+    /* =========================================
+       REVIEWS & SOCIAL PROOF
+    ========================================= */
+    .reviews-box {
+      background: linear-gradient(180deg, rgba(38, 22, 45, 0.6) 0%, rgba(20, 13, 24, 0.9) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      margin-top: 30px;
+    }
+
+    .reviews-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .reviews-rating-big {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .rating-number {
+      font-size: 44px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .rating-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .rating-stars-gold {
+      color: var(--gold);
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 10px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.2s ease;
+    }
+
+    .google-badge:hover {
+      background: rgba(201, 107, 157, 0.2);
+      border-color: var(--brand-rose);
+      transform: translateY(-2px);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: rgba(18, 12, 22, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testimonial-quote {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #ece3ed;
+      font-style: italic;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 12px;
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .author-stars {
+      color: var(--gold);
+      font-size: 13px;
+    }
+
+    /* =========================================
+       SCHEDULE & CONTACTS
+    ========================================= */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+
+    .schedule-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .schedule-table td {
+      padding: 12px 0;
+      font-size: 14.5px;
+    }
+
+    .schedule-table td.day {
+      font-weight: 700;
+      color: #fff;
+      width: 45%;
+    }
+
+    .schedule-table td.time {
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(94, 48, 76, 0.4);
+      border: 1px solid rgba(201, 107, 157, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand-rose);
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+    .contact-text h5 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--brand-rose);
+      margin-bottom: 4px;
+    }
+
+    .contact-text a, .contact-text p {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .contact-text a:hover {
+      color: var(--brand-rose-glow);
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    footer {
+      background: #09060b;
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 24px;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .footer-logo {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .social-btn:hover {
+      background: var(--brand-plum);
+      border-color: var(--brand-rose);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-faint);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* =========================================
+       FLOATING WHATSAPP
+    ========================================= */
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 1000;
+      background: #25D366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.06) translateY(-2px);
+      box-shadow: 0 14px 35px rgba(37, 211, 102, 0.6);
+      color: #fff;
+    }
+
+    .floating-whatsapp svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .hero-content h1 {
+        font-size: 38px;
+      }
+      .ems-statico-box {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+      .ems-statico-img-wrap img {
+        height: 280px;
+      }
+      .network-box {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+      .network-img-wrap img {
+        height: 280px;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .ems-statico-protocols-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .ems-statico-compare-grid {
+        grid-template-columns: 1fr;
+      }
+      .ems-statico-compare-box {
+        padding: 26px 20px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: 70px;
+      }
+      main {
+        padding-top: 70px;
+      }
+      nav {
+        display: none;
+      }
+      .header-btn span {
+        display: none;
+      }
+      .header-btn {
+        padding: 8px 12px;
+      }
+      .hero-content h1 {
+        font-size: 32px;
+      }
+      .hero-card img {
+        height: 380px;
+      }
+      .ems-statico-features {
+        grid-template-columns: 1fr;
+      }
+      .ems-statico-protocols-grid {
+        grid-template-columns: 1fr;
+      }
+      .floating-whatsapp span {
+        display: none;
+      }
+      .floating-whatsapp {
+        padding: 14px;
+        border-radius: 50%;
+        bottom: 18px;
+        right: 18px;
+      }
+      .steps-reassurance-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-container">
+      <a href="#hero" class="brand-link" aria-label="DOMINA Home">
+        <img src="domina-logo-white.png" alt="DOMINA Logo" class="brand-logo-img" />
+        <div class="brand-text">
+          <span class="brand-tagline">Fitness Donna</span>
+          <span class="brand-city">Studio Massafra</span>
+        </div>
+      </a>
+
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#first-session">La Prima Prova</a>
+        <a href="#spaces">Lo Studio</a>
+        <a href="#team">Lo Staff</a>
+        <a href="#services">I Corsi</a>
+        <a href="#ems-statico">Percorso EMS Statico</a>
+        <a href="#network">Salute & Benessere</a>
+        <a href="#reviews">Recensioni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20prenotare%20una%20prova%20gratuita%20da%20DOMINA" target="_blank" rel="noopener" class="header-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.05.5C6.01.5 1.16 5.35 1.16 11.4c0 2.01.53 3.87 1.46 5.5L.05 23.5l6.83-1.78a11.69 11.69 0 0 0 4.88 1.02c6.05 0 10.9-4.85 10.9-10.9 0-2.92-1.13-5.66-3.29-7.34zM12.05 21.8c-1.88 0-3.66-.49-5.21-1.39l-.37-.22-4.06 1.06 1.08-3.96-.24-.39a9.78 9.78 0 0 1-1.5-5.5c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87A9.75 9.75 0 0 1 21.35 12c0 5.4-4.4 9.8-9.8 9.8z"/></svg>
+          <span>Prenota Prova</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="kicker">
+              <span class="kicker-dot"></span>
+              Studio Esclusivo Donna • Massafra
+            </div>
+
+            <h1>
+              Trasforma il tuo corpo.<br>
+              <span class="grad-text">Ritrova energia, tono e benessere.</span>
+            </h1>
+
+            <p class="hero-lead">
+              Uno spazio curato, intimo e motivante dedicato solo alle donne. 
+              Tecnologia <strong>EMS</strong>, percorso benessere <strong>EMS Statico</strong>, <strong>Corsi in Small Group</strong> (4-6 donne), ginnastica <strong>Posturale</strong> e convenzioni salute con coach sempre al tuo fianco.
+            </p>
+
+            <div class="hero-alert">
+              <span>⚠️</span>
+              <div>
+                <strong>Posti limitati in small-group:</strong> garantiamo massima attenzione individuale e risultati tangibili.
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20prenotare%20la%20mia%20prova%20gratuita%20DOMINA" target="_blank" rel="noopener" class="btn">
+                <span>Prenota la Tua Prova Gratuita</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+
+              <a href="#first-session" class="btn alt">
+                <span>Come funziona la prova?</span>
+              </a>
+            </div>
+
+            <div class="trust-row">
+              <div class="trust-item">
+                <span class="trust-stars">★★★★★</span>
+                <span><strong>5.0</strong> su Google</span>
+              </div>
+              <div class="trust-item">
+                <span>🌸 <strong>100%</strong> Ambiente Femminile</span>
+              </div>
+              <div class="trust-item">
+                <span>⚡ <strong>EMS & EMS Statico</strong> Wiemspro</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Card -->
+          <div class="hero-visual">
+            <div class="hero-card">
+              <div class="hero-badge-float">
+                <span>⚡</span> Metodo Body Sculpting
+              </div>
+              <img src="hero-workout.jpg" alt="Allenamento EMS Donna presso DOMINA Massafra" />
+              <div class="hero-card-overlay"></div>
+              <div class="hero-card-content">
+                <h3 style="font-size: 20px; font-weight: 700; color: #fff;">Solo 20 minuti con tecnologia EMS & EMS statico</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 4px;">
+                  Attiva oltre 300 muscoli contemporaneamente: tonificazione profonda, rimodellamento glutei e miglioramento del microcircolo.
+                </p>
+                <div class="hero-card-tags">
+                  <span class="hero-tag">Tecnologia EMS</span>
+                  <span class="hero-tag">Percorso EMS statico</span>
+                  <span class="hero-tag">Corsi Small Group</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COSA SUCCEDE ALLA PRIMA PROVA ================= -->
+    <section id="first-session" class="section-py steps-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Trasparenza & Serenità</div>
+          <h2>Cosa succede alla tua prima prova gratuita?</h2>
+          <p>
+            Sappiamo che iniziare qualcosa di nuovo può intimorire. A DOMINA trovi un'atmosfera accogliente, senza fretta né giudizi: ecco i 4 passaggi pensati per farti sentire subito al sicuro.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div>
+              <div class="step-header">
+                <div class="step-number">1</div>
+                <span class="step-time">10 min</span>
+              </div>
+              <h3>Accoglienza & Ascolto</h3>
+              <p>
+                Ti accogliamo con un sorriso e una tisana. Ci sediamo insieme per un colloquio rilassato: ci racconti cosa desideri migliorare, i tuoi ritmi e se hai dolori a schiena o articolazioni.
+              </p>
+            </div>
+            <div class="step-benefit">
+              <span>☕</span> Nessun giudizio, solo ascolto empatico
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div>
+              <div class="step-header">
+                <div class="step-number">2</div>
+                <span class="step-time">10 min</span>
+              </div>
+              <h3>Check & Valutazione</h3>
+              <p>
+                Effettuiamo un'analisi posturale delicata e valutiamo la tua composizione corporea. Capiremo insieme se per te è più indicato l'EMS attivo, il percorso EMS statico o lo Small Group.
+              </p>
+            </div>
+            <div class="step-benefit">
+              <span>📋</span> Piano su misura per le tue esigenze
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div>
+              <div class="step-header">
+                <div class="step-number">3</div>
+                <span class="step-time">20 min</span>
+              </div>
+              <h3>La Tua Prova Guidata</h3>
+              <p>
+                Indossi la tuta EMS, provi i pantaloni EMS statico o partecipi alla sessione small-group: la seduta è calibrata a intensità dolce sul tuo livello. La coach è fisicamente al tuo fianco.
+              </p>
+            </div>
+            <div class="step-benefit">
+              <span>⚡</span> La coach non ti lascia mai da sola
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div>
+              <div class="step-header">
+                <div class="step-number">4</div>
+                <span class="step-time">Relax</span>
+              </div>
+              <h3>Sensazioni & Libertà</h3>
+              <p>
+                Ti godi la sensazione di leggerezza, tono ed endorfine. Facciamo il punto insieme su come ti senti. Ti illustriamo le opzioni e decidi tu in totale tranquillità: zero pressioni commerciali!
+              </p>
+            </div>
+            <div class="step-benefit">
+              <span>🌸</span> Zero vincoli o obblighi di iscrizione
+            </div>
+          </div>
+
+        </div>
+
+        <div class="steps-reassurance-box">
+          <div class="reassurance-text">
+            <h4>👜 Cosa devo portare da casa per la prova?</h4>
+            <p>Solo scarpe da ginnastica pulite e voglia di dedicarti del tempo per te. Al kit di prova, asciugamani sanificati e al resto pensiamo noi!</p>
+          </div>
+          <div>
+            <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20fissare%20la%20mia%20prova%20gratuita%20senza%20impegno" target="_blank" rel="noopener" class="btn">
+              <span>Fissa la Tua Prova su WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= FOTO REALI DEGLI AMBIENTI ================= -->
+    <section id="spaces" class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Il Nostro Spazio a Massafra</div>
+          <h2>La Tua Oasi di Benessere, Tecnologia & Privacy</h2>
+          <p>
+            Uno studio curato nei minimi particolari: pulizia impeccabile, illuminazione calda e atmosfera rilassante. Dimentica il caos e gli spogliatoi affollati.
+          </p>
+        </div>
+
+        <div class="spaces-grid">
+
+          <!-- Spazio 1: Sala EMS Total Body -->
+          <div class="space-card">
+            <div class="space-img-wrap">
+              <span class="space-badge">Tecnologia & Tono</span>
+              <img src="spazio-funzionale.jpg" alt="Sala EMS Total Body DOMINA Massafra" />
+            </div>
+            <div class="space-body">
+              <div>
+                <h3>Sala EMS Total Body</h3>
+                <p>
+                  Postazioni hi-tech con tute per elettrostimolazione integrale sempre igienizzate ad ogni ciclo. Attrezzature moderne per attivare tutto il corpo in soli 20 minuti seguiti dalla coach.
+                </p>
+              </div>
+              <ul class="space-perks">
+                <li>Solo 1–2 allieve per postazione EMS</li>
+                <li>Tute sanificate dopo ogni utilizzo</li>
+                <li>Climatizzazione e privacy totale</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spazio 2: Spazio EMS Statico & Corsi -->
+          <div class="space-card">
+            <div class="space-img-wrap">
+              <span class="space-badge">EMS Statico & Corsi</span>
+              <img src="spazio-ems-statico.jpg" alt="Postazione EMS Statico DOMINA Massafra" />
+            </div>
+            <div class="space-body">
+              <div>
+                <h3>Cabina Relax EMS Statico</h3>
+                <p>
+                  Postazione esclusiva con lettino ergonomico per il trattamento di body sculpting ed elettrostimolazione passiva Wiemspro: rimodellamento e leggerezza in pieno comfort.
+                </p>
+              </div>
+              <ul class="space-perks">
+                <li>Pantaloni anatomici ad azione profonda</li>
+                <li>Stimolazione passiva fino a 10 gruppi muscolari</li>
+                <li>Atmosfera da spa, musica soffusa e relax</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spazio 3: Sala Corsi in Small Group -->
+          <div class="space-card">
+            <div class="space-img-wrap">
+              <span class="space-badge">Small Group & Dinamismo</span>
+              <img src="spazio-small-group.jpg" alt="Sala Corsi in Small Group DOMINA Massafra" />
+            </div>
+            <div class="space-body">
+              <div>
+                <h3>Area Corsi in Small Group</h3>
+                <p>
+                  Parquet in legno, kettlebell, piccoli attrezzi e tappetini ergonomici. Spazio dedicato ad allenamenti divertenti e motivanti in gruppi selezionati di massimo 4–6 partecipanti.
+                </p>
+              </div>
+              <ul class="space-perks">
+                <li>Numero chiuso rigoroso: max 4–6 donne</li>
+                <li>Correzione continua e complicità tra allieve</li>
+                <li>Circuiti metabolici e ginnastica posturale</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Spazio 4: Spogliatoi Boutique -->
+          <div class="space-card">
+            <div class="space-img-wrap">
+              <span class="space-badge">Comfort & Riservatezza</span>
+              <img src="spogliatoio-domina.jpg" alt="Spogliatoio boutique e zona vanity femminile" />
+            </div>
+            <div class="space-body">
+              <div>
+                <h3>Spogliatoio & Vanity Relax</h3>
+                <p>
+                  Sappiamo quanto conti la privacy per una donna. I nostri spogliatoi offrono armadietti personali, specchi retroilluminati, asciugacapelli professionali e docce sempre pulite.
+                </p>
+              </div>
+              <ul class="space-perks">
+                <li>Massima privacy 100% al femminile</li>
+                <li>Asciugamani soffici e igiene costante</li>
+                <li>Angolo vanity per prepararti con calma</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IL TUO TEAM / LE COACH ================= -->
+    <section id="team" class="section-py team-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Chi Si Prende Cura di Te</div>
+          <h2>Dietro DOMINA ci siamo noi</h2>
+          <p>
+            A DOMINA non sarai mai un numero di badge lasciato da solo davanti a una macchina. Il nostro team ti accoglie, ti segue passo dopo passo ed è sempre al tuo fianco per farti sentire sicura, motivata e compresa.
+          </p>
+        </div>
+
+        <div class="ems-statico-box" style="padding: 40px;">
+          
+          <div class="ems-statico-img-wrap" style="box-shadow: 0 10px 30px rgba(0,0,0,0.5); overflow: hidden; border-radius: var(--radius-md);">
+            <img src="dietro-domina-staff.jpg" alt="Dietro DOMINA ci siamo noi - Staff DOMINA Fitness Donna Massafra" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+          </div>
+
+          <div class="promise-card" style="padding: 0; background: transparent; border: none; text-align: left; box-shadow: none;">
+            <span class="kicker" style="margin-bottom: 12px; width: fit-content; text-align: left;">La Filosofia DOMINA</span>
+            <h3 style="font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 16px; line-height: 1.2;">
+              <span>❤️</span> La Nostra Promessa per Te
+            </h3>
+            <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">
+              Tutto il nostro staff è pronto a sostenerti e guidarti. A DOMINA trovi professioniste empatiche e unite: la forza e la complicità del nostro gruppo sono la garanzia del tuo benessere.
+            </p>
+
+            <ul class="promise-list" style="margin-bottom: 24px;">
+              <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-rose)" stroke-width="2.5" style="width: 22px; height: 22px; flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 14px; color: #fff;"><strong>Correzione costante:</strong> curiamo ogni singolo respiro e allineamento per evitare infortuni.</span>
+              </li>
+              <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-rose)" stroke-width="2.5" style="width: 22px; height: 22px; flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 14px; color: #fff;"><strong>Ritmo su misura:</strong> se un giorno sei stanca o hai dolori, l'allenamento si adatta a te, non il contrario.</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 12px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-rose)" stroke-width="2.5" style="width: 22px; height: 22px; flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span style="font-size: 14px; color: #fff;"><strong>Clima positivo:</strong> uscirai dallo studio con il sorriso, più energia e la mente sgombra.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/393914011503?text=Vorrei%20conoscere%20lo%20staff%20e%20fare%20due%20chiacchiere%20senza%20impegno" target="_blank" rel="noopener" class="btn">
+              <span>Vieni a Conoscerci</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVIZI GRID ================= -->
+    <section id="services" class="section-py" style="background: rgba(21, 14, 26, 0.45); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">I Nostri Corsi & Percorsi</div>
+          <h2>Servizi Esclusivi per Ogni Obiettivo</h2>
+          <p>Programmi scientificamente strutturati per rimodellare la silhouette, tonificare senza gonfiare e migliorare postura e salute.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Servizio 1: EMS Body Sculpting -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-badge">Punta di Diamante</span>
+              <h4>Body Sculpting con EMS Attivo</h4>
+              <p>La tecnologia ad elettrostimolazione integrale più avanzata: attiva le fibre muscolari profonde in soli 20 minuti senza sovraccaricare le articolazioni.</p>
+              <ul class="service-bullets">
+                <li>Tonificazione rapida di glutei, addome e cosce</li>
+                <li>Riattivazione del microcircolo per favorire la leggerezza</li>
+                <li>Massima resa nel minor tempo possibile</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/393914011503?text=Vorrei%20provare%20EMS%20Body%20Sculpting" target="_blank" rel="noopener" class="service-link">
+              <span>Prenota prova EMS →</span>
+            </a>
+          </div>
+
+          <!-- Servizio 2: Percorso EMS Statico (Novità) -->
+          <div class="service-card highlight">
+            <div class="service-top">
+              <span class="service-badge" style="background: rgba(201, 107, 157, 0.25); color: #fff;">Novità Benessere • Wiemspro</span>
+              <h4>Percorso EMS Statico Body Sculpting</h4>
+              <p>Il trattamento benessere non invasivo che sfrutta il Whole-Body EMS in modalità rilassante. Stimola simultaneamente fino a 10 gruppi muscolari per rimodellare e riattivare la circolazione.</p>
+              <ul class="service-bullets">
+                <li>Effetto push-up glutei e pancia piatta visibile</li>
+                <li>Riattivazione profonda del microcircolo</li>
+                <li>Comodamente distesa sul lettino in totale relax</li>
+              </ul>
+            </div>
+            <a href="#ems-statico" class="service-link">
+              <span>Scopri il Percorso EMS Statico →</span>
+            </a>
+          </div>
+
+          <!-- Servizio 3: Corsi in Small Group -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-badge">Socialità & Motivazione</span>
+              <h4>Corsi in Small Group (4-6 Donne)</h4>
+              <p>Allenamenti dinamici e coinvolgenti a numero rigorosamente chiuso. Tutta l'assistenza di un personal trainer con l'energia contagiosa del piccolo gruppo.</p>
+              <ul class="service-bullets">
+                <li>Massimo 4–6 partecipanti: correzione continua della coach</li>
+                <li>Esercizi variati con kettlebell, elastici e piccoli attrezzi</li>
+                <li>Complicità, musica motivante e zero monotonia</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/393914011503?text=Vorrei%20informazioni%20sui%20Corsi%20in%20Small%20Group" target="_blank" rel="noopener" class="service-link">
+              <span>Scopri i Corsi in Small Group →</span>
+            </a>
+          </div>
+
+          <!-- Servizio 4: Ginnastica Posturale -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-badge">Salute & Schiena</span>
+              <h4>Ginnastica Posturale</h4>
+              <p>Esercizi mirati per riallineare la colonna vertebrale, sciogliere contratture cervicali e lombari e ritrovare leggerezza nei movimenti quotidiani.</p>
+              <ul class="service-bullets">
+                <li>Sollievo mirato da cervicalgie e tensioni posturali</li>
+                <li>Decompressione articolare e mobilità corretta</li>
+                <li>Indicato per tutte le età e condizioni fisiche</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/393914011503?text=Vorrei%20informazioni%20su%20Ginnastica%20Posturale" target="_blank" rel="noopener" class="service-link">
+              <span>Richiedi una valutazione posturale →</span>
+            </a>
+          </div>
+
+          <!-- Servizio 5: Circuito Switching -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-badge">Dinamismo & Cardio</span>
+              <h4>Circuito SWITCHING & Funzionale</h4>
+              <p>Allenamento dinamico a stazioni che unisce forza e cardio in small-group: ritrova il ritmo, brucia calorie e divertiti con altre donne determinate.</p>
+              <ul class="service-bullets">
+                <li>Accelerazione metabolica e consumo calorico</li>
+                <li>Sessioni coinvolgenti a ritmo sostenibile</li>
+                <li>Coinvolgimento muscolare completo e armonioso</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/393914011503?text=Vorrei%20provare%20il%20circuito%20Switching" target="_blank" rel="noopener" class="service-link">
+              <span>Partecipa al circuito →</span>
+            </a>
+          </div>
+
+          <!-- Servizio 6: Percorsi Integrati Salute & Benessere -->
+          <div class="service-card">
+            <div class="service-top">
+              <span class="service-badge">Approccio a 360°</span>
+              <h4>Percorsi Salute e Benessere Avanzato</h4>
+              <p>Convenzioni esclusive con biologhe nutrizioniste, fisioterapisti e centri benessere convenzionati per un percorso completo di rimodellamento.</p>
+              <ul class="service-bullets">
+                <li>Piani nutrizionali personalizzati per il dimagrimento</li>
+                <li>Supporto fisioterapico e prevenzione dolori</li>
+                <li>Agevolazioni e tariffe speciali per le iscritte DOMINA</li>
+              </ul>
+            </div>
+            <a href="#network" class="service-link">
+              <span>Scopri le convenzioni partner →</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOCUS DEDICATO: PERCORSO EMS Statico ================= -->
+    <section id="ems-statico" class="section-py ems-statico-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="kicker">Tecnologia Benessere Esclusiva Wiemspro</div>
+          <h2>Percorso EMS Statico: Il Body Sculpting Avanzato</h2>
+          <p>
+            Rassoda, stimola e rimodella fino a 10 gruppi muscolari contemporaneamente mentre ti rilassi sul lettino. La risposta definitiva per ritrovare tonicità e ripristinare la compattezza dei tessuti senza sforzo articolare.
+          </p>
+        </div>
+
+        <div class="ems-statico-box">
+          <div class="ems-statico-img-wrap">
+            <img src="percorso-ems-statico-relax.jpg" alt="Trattamento benessere EMS Statico Body Sculpting DOMINA Massafra" />
+          </div>
+
+          <div>
+            <span class="kicker" style="margin-bottom: 10px;">Come Funziona EMS statico</span>
+            <h3 style="font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 12px; line-height: 1.25;">
+              La potenza dell'EMS al servizio della bellezza femminile.
+            </h3>
+            <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6;">
+              Indossi il comodo pantalone anatomico intelligente EMS statico: impulsi a frequenza calibrata stimolano le fasce muscolari in profondità, generando contrazioni che equivalgono a centinaia di squat e crunch, ma in totale relax.
+            </p>
+
+            <div class="ems-statico-features">
+              
+              <div class="ems-statico-feature-card">
+                <h5>🍑 Glutei Lift & Push-Up</h5>
+                <p>Tonifica e innalza la linea dei glutei, rimodellando la silhouette con precisione millimetrica.</p>
+              </div>
+
+              <div class="ems-statico-feature-card">
+                <h5>💧 Stimolazione del Microcircolo</h5>
+                <p>Attiva il sistema linfatico, combatte i ristagni di liquidi e leviga la buccia d'arancia.</p>
+              </div>
+
+              <div class="ems-statico-feature-card">
+                <h5>🌿 Zero Sforzo per le Articolazioni</h5>
+                <p>Ideale per chi non può caricare sulla schiena, per chi ha ritenzione o per il recupero post-parto.</p>
+              </div>
+
+              <div class="ems-statico-feature-card">
+                <h5>⏱️ Risultati Visibili in 25 Minuti</h5>
+                <p>Sedute rapide e confortevoli, perfette da integrare con i tuoi allenamenti o trattamenti benessere.</p>
+              </div>
+
+            </div>
+
+            <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20prenotare%20una%20consulenza%20per%20il%20Percorso%20EMS%20Statico" target="_blank" rel="noopener" class="btn" style="width: 100%; text-align: center;">
+              <span>Prenota la Tua Valutazione EMS Statico su WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- I 4 Protocolli Specifici EMS Statico -->
+        <div class="ems-statico-subblock">
+          <div class="ems-statico-subblock-title">
+            <span class="kicker">Protocolli Esclusivi DOMINA</span>
+            <h3>I 4 Percorsi EMS Statico Studiati per Te</h3>
+            <p>Ogni donna ha esigenze uniche: la coach imposta le frequenze e i programmi Wiemspro in base al tuo obiettivo corporeo prioritario.</p>
+          </div>
+
+          <div class="ems-statico-protocols-grid">
+            <div class="ems-statico-protocol-card">
+              <div class="ems-statico-protocol-icon">🍑</div>
+              <h4>Glutei Sculpt & Push-Up</h4>
+              <p>Stimola selettivamente il grande, medio e piccolo gluteo. Rassoda, alza il profilo e dona volume armonioso senza ingrossare le gambe.</p>
+              <span class="ems-statico-protocol-badge">Focus Tonificazione</span>
+            </div>
+
+            <div class="ems-statico-protocol-card">
+              <div class="ems-statico-protocol-icon">💧</div>
+              <h4>Riattivazione & Leggerezza</h4>
+              <p>Onde a frequenza modulata che agiscono sulla microcircolazione profonda, sbloccando la stasi linfatica e riducendo l'effetto buccia d'arancia.</p>
+              <span class="ems-statico-protocol-badge">Focus Microcircolo</span>
+            </div>
+
+            <div class="ems-statico-protocol-card">
+              <div class="ems-statico-protocol-icon">✨</div>
+              <h4>Addome Piatto & Core Tightening</h4>
+              <p>Coinvolge la parete addominale e il muscolo trasverso per un ventre più piatto e una circonferenza vita assottigliata, senza sollecitare il collo.</p>
+              <span class="ems-statico-protocol-badge">Focus Silhouette</span>
+            </div>
+
+            <div class="ems-statico-protocol-card">
+              <div class="ems-statico-protocol-icon">🌸</div>
+              <h4>Post-Parto & Pavimento Pelvico</h4>
+              <p>Protocollo ultra-delicato studiato per riattivare in totale sicurezza la muscolatura pelvica e profonda dopo la gravidanza o lunghi periodi di stop.</p>
+              <span class="ems-statico-protocol-badge">Focus Benessere Intimo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box Confronto: EMS Attivo vs Percorso EMS Statico -->
+        <div class="ems-statico-compare-box">
+          <div style="text-align: center; max-width: 600px; margin: 0 auto 20px;">
+            <span class="kicker">Guida alla Scelta</span>
+            <h3 style="font-size: 22px; font-weight: 800; color: #fff;">EMS Attivo o Percorso EMS Statico: Quale fa per te?</h3>
+            <p style="font-size: 13.5px; color: var(--text-muted);">Due tecnologie sorelle firmate Wiemspro per soddisfare bisogni differenti.</p>
+          </div>
+
+          <div class="ems-statico-compare-grid">
+            <div class="ems-statico-compare-col">
+              <h4>⚡ EMS Integrale Attivo</h4>
+              <p class="compare-subtitle">Allenamento Dinamico con Personal Coach</p>
+              <ul>
+                <li><strong>Come si svolge:</strong> In piedi, con movimenti guidati dolci a corpo libero o con piccoli attrezzi.</li>
+                <li><strong>Durata:</strong> 20 minuti intensi, stimolanti ed efficaci.</li>
+                <li><strong>Obiettivo:</strong> Attivazione metabolica, forza muscolare, dimagrimento rapido e postura corretta.</li>
+                <li><strong>Ideale per:</strong> Chi vuole allenarsi davvero, massimizzando i risultati di un'intera settimana in soli 20 minuti.</li>
+              </ul>
+            </div>
+
+            <div class="ems-statico-compare-col highlight-col">
+              <h4>🌿 Percorso EMS Statico</h4>
+              <p class="compare-subtitle">Body Sculpting Avanzato in Cabina Relax</p>
+              <ul>
+                <li><strong>Come si svolge:</strong> Comodamente distesa sul lettino in cabina relax con i pantaloni intelligenti Danube.</li>
+                <li><strong>Durata:</strong> 25 minuti in totale tranquillità.</li>
+                <li><strong>Obiettivo:</strong> Rimodellamento localizzato, riattivazione, compattezza, effetto push-up glutei.</li>
+                <li><strong>Ideale per:</strong> Chi cerca un trattamento benessere potente, ha problemi articolari o vuole un momento rilassante e rigenerante.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ems-statico-synergy-banner">
+            ✨ <strong>Il Segreto DOMINA:</strong> Molte nostre iscritte combinano 1 seduta di EMS Attivo a settimana con 1 seduta di EMS Statico per un rimodellamento corporeo completo e tempi di recupero ideali.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONVENZIONI Salute & Benessere ================= -->
+    <section id="network" class="section-py network-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Benessere Integrato a 360°</div>
+          <h2>Convenzioni con Professionisti della Salute e del benessere</h2>
+          <p>
+            Sappiamo che i veri risultati nascono dall'unione tra allenamento mirato, corretta nutrizione e cura del corpo. A Massafra abbiamo creato una rete di professionisti d'eccellenza con condizioni esclusive per le iscritte DOMINA.
+          </p>
+        </div>
+
+        <div class="network-box">
+          <div class="network-img-wrap">
+            <img src="salute-benessere.jpg" alt="Consulenza Salute, Nutrizione e Benessere DOMINA" />
+          </div>
+
+          <div>
+            <span class="kicker" style="margin-bottom: 10px;">La Rete DOMINA Care</span>
+            <h3 style="font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 12px; line-height: 1.25;">
+              Un percorso completo costruito attorno alla tua salute.
+            </h3>
+            <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.6;">
+              Non dovrai più gestire da sola visite sparse e consigli contrastanti. Collaboriamo a stretto contatto con figure specializzate per accompagnarti con un metodo coerente ed efficace.
+            </p>
+
+            <div class="network-pills">
+              
+              <div class="network-pill">
+                <h4>🥗 Esperti dell'Alimentazione</h4>
+                <p>Consulenze e suggerimenti mirati per sostenere l'energia, sgonfiare e massimizzare i risultati ottenuti in studio durante l'allenamento.</p>
+              </div>
+
+              <div class="network-pill">
+                <h4>🩺 Esperti del Movimento</h4>
+                <p>Supporto per migliorare la postura, alleggerire le tensioni quotidiane e ritrovare il corretto equilibrio del corpo in sinergia con i nostri esercizi.</p>
+              </div>
+
+              <div class="network-pill">
+                <h4>✨ Esperti della Cura del Corpo</h4>
+                <p>Collaborazioni con professionisti del settore per favorire il recupero e prolungare la sensazione di leggerezza e tonicità.</p>
+              </div>
+
+            </div>
+
+            <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20conoscere%20le%20convenzioni%20attive%20con%20i%20professionisti%20della%20salute%20e%20del benessere" target="_blank" rel="noopener" class="btn" style="width: 100%; text-align: center;">
+              <span>Richiedi le Convenzioni Attive su WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PILASTRI DEL METODO ================= -->
+    <section class="section-py">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Perché Scegliere DOMINA</div>
+          <h2>I 4 Valori che Fanno la Differenza</h2>
+          <p>Un centro pensato dall'inizio alla fine per le donne che desiderano risultati concreti con la massima efficienza di tempo.</p>
+        </div>
+
+        <div class="pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon">🌸</div>
+            <h3>100% Spazio Femminile</h3>
+            <p>Un ambiente intimo, sereno e riservato esclusivamente alle donne, libero da sguardi indiscreti. Qui puoi concentrarti solo su te stessa.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">👥</div>
+            <h3>Piccoli Gruppi (4–6 Donne)</h3>
+            <p>Sessioni a numero rigorosamente chiuso per garantire la massima assistenza tecnica e sicurezza durante ogni esercizio, con la giusta complicità tra donne.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3>Alta Tecnologia EMS & EMS statico</h3>
+            <p>I nostri percorsi combinano il sistema EMS integrale attivo e il body sculpting passivo EMS statico per offrirti i massimi benefici fisici e muscolari.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🎯</div>
+            <h3>Salute & Benessere Integrata</h3>
+            <p>Un approccio a 360° con convenzioni e percorsi guidati con nutrizioniste, fisioterapisti e specialisti del Benessere Avanzato.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RECENSIONI ================= -->
+    <section id="reviews" class="section-py">
+      <div class="container">
+        
+        <div class="reviews-box">
+          <div class="reviews-top">
+            <div class="reviews-rating-big">
+              <div class="rating-number">5.0</div>
+              <div class="rating-details">
+                <div class="rating-stars-gold">★★★★★</div>
+                <div style="font-size: 13px; color: var(--text-muted);">Valutazione Massima Google Reviews</div>
+              </div>
+            </div>
+
+            <div>
+              <a href="https://share.google/Euce1lZbxygvq0I5t" target="_blank" rel="noopener" class="google-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.4 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3 0-.8.1-1.6.4-2.3L1.9 7.3C.7 9.7 0 12.4 0 15.2c0 2.8.7 5.5 1.9 7.9l3.7-2.9z"/><path fill="#34A853" d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.4-6.4-5.2L1.9 16.5C3.7 20.2 7.5 23.5 12 23.5z"/></svg>
+                <span>Leggi tutte le recensioni su Google</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="testimonials-grid">
+            
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                “Un vero percorso benessere! Da quando mi alleno al DOMINA anche l’ansia e lo stress quotidiano si sono ridotti notevolmente. Grazie di cuore alle coach ❤️”
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Maria R.</span>
+                <span class="author-stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                “Ambiente familiare, professionale e super curato nei dettagli. Gli allenamenti in small-group sono divertenti ed efficaci: risultati visibili in pochissimo tempo!”
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Chiara G.</span>
+                <span class="author-stars">★★★★★</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                “Finalmente un centro fitness pensato solo per noi donne! Mi sento seguita con attenzione, corretta in ogni movimento e motivata ogni singola volta 💪”
+              </p>
+              <div class="testimonial-author">
+                <span class="author-name">Simona P.</span>
+                <span class="author-stars">★★★★★</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= DOMANDE FREQUENTI (FAQ) ================= -->
+    <section id="faq" class="section-py faq-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">Hai Domande?</div>
+          <h2>Domande Frequenti su DOMINA e i Percorsi</h2>
+          <p>Tutto quello che desideri sapere prima di venire a trovarci nel nostro studio a Massafra.</p>
+        </div>
+
+        <div class="faq-grid">
+          
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> Cos'è il Percorso EMS Statico e dà fastidio o scosse?</h4>
+            <p>Assolutamente no. Il Percorso EMS Statico by Wiemspro utilizza impulsi piacevoli a frequenza modulata che contraggono dolcemente fino a 10 gruppi muscolari. La sensazione è simile a un massaggio tonificante profondo. L'intensità viene sempre calibrata dalla coach in base alla tua sensibilità personale.</p>
+          </div>
+
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> Non mi alleno da tempo o ho mal di schiena: posso farlo?</h4>
+            <p>È proprio l'ambiente giusto per te! Sia l'EMS che il Percorso EMS Statico e la Ginnastica Posturale eliminano i carichi pesanti sulle articolazioni e sulla colonna vertebrale. La coach adatta ogni singolo stimolo alla tua situazione di partenza.</p>
+          </div>
+
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> Cosa devo portare per la prima prova gratuita?</h4>
+            <p>Non serve portare nulla di complicato: solo un paio di scarpe da ginnastica pulite e la voglia di dedicarti del tempo. L'abbigliamento tecnico specifico per EMS ed EMS Statico te lo forniamo noi direttamente in studio.</p>
+          </div>
+
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> Come funzionano i Corsi in Small Group (4-6 donne)?</h4>
+            <p>I corsi si svolgono con un massimo di sole 4-6 partecipanti per classe. Questo permette alla coach di seguire ogni donna con la cura di un personal training, evitando gli affollamenti delle palestre tradizionali e creando un bel gruppo affiatato.</p>
+          </div>
+
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> Come funzionano le convenzioni con nutrizionista e benessere?</h4>
+            <p>Come iscritta DOMINA hai accesso prioritario e condizioni agevolate presso i nostri specialisti partner di Massafra (biologhe nutrizioniste, fisioterapisti ed estetiste convenzionate). Il percorso viene coordinato insieme alle coach per massimizzare i tuoi risultati.</p>
+          </div>
+
+          <div class="faq-card">
+            <h4><span class="faq-q">Q:</span> In quanto tempo si vedono i primi risultati?</h4>
+            <p>La sensazione di leggerezza, riattivazione del microcircolo e benessere si percepisce già al termine della primissima seduta. Risultati visibili su tono muscolare, microcircolo e circonferenze sono evidenti già dopo 4-6 settimane di costanza.</p>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="https://wa.me/393914011503?text=Ciao!%20Ho%20una%20domanda%20sui%20vostri%20percorsi" target="_blank" rel="noopener" class="btn whatsapp-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.05.5C6.01.5 1.16 5.35 1.16 11.4c0 2.01.53 3.87 1.46 5.5L.05 23.5l6.83-1.78a11.69 11.69 0 0 0 4.88 1.02c6.05 0 10.9-4.85 10.9-10.9 0-2.92-1.13-5.66-3.29-7.34zM12.05 21.8c-1.88 0-3.66-.49-5.21-1.39l-.37-.22-4.06 1.06 1.08-3.96-.24-.39a9.78 9.78 0 0 1-1.5-5.5c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87A9.75 9.75 0 0 1 21.35 12c0 5.4-4.4 9.8-9.8 9.8z"/></svg>
+            <span>Hai altre domande? Scrivici su WhatsApp (Siamo a Massafra)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATTI & ORARI ================= -->
+    <section id="contact" class="section-py">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="kicker">Vieni a Trovarci</div>
+          <h2>Orari dello Studio & Contatti</h2>
+          <p>Prenota la tua sessione conoscitiva o passa a trovarci a Massafra. Saremo felici di mostrarti lo studio e spiegarti i nostri percorsi.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Orari Card -->
+          <div class="info-card">
+            <div>
+              <h3>
+                <span>⏰</span> Orari di Apertura
+              </h3>
+
+              <table class="schedule-table">
+                <tbody>
+                  <tr>
+                    <td class="day">Lunedì – Venerdì</td>
+                    <td class="time">
+                      08:00 – 12:00<br>
+                      15:00 – 20:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="day">Sabato</td>
+                    <td class="time">08:00 – 11:00</td>
+                  </tr>
+                  <tr>
+                    <td class="day">Domenica</td>
+                    <td class="time" style="color: var(--brand-rose);">Chiuso (Riposo & Ricarica)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 24px;">
+                💡 <em>Gli allenamenti si svolgono su appuntamento in piccoli gruppi per garantire il massimo rispetto degli orari e la privacy.</em>
+              </p>
+            </div>
+
+            <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20conoscere%20gli%20orari%20disponibili%20per%20un%20allenamento" target="_blank" rel="noopener" class="btn whatsapp-cta" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.05.5C6.01.5 1.16 5.35 1.16 11.4c0 2.01.53 3.87 1.46 5.5L.05 23.5l6.83-1.78a11.69 11.69 0 0 0 4.88 1.02c6.05 0 10.9-4.85 10.9-10.9 0-2.92-1.13-5.66-3.29-7.34z"/></svg>
+              <span>Verifica Disponibilità su WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Contatti & Dove Siamo Card -->
+          <div class="info-card">
+            <div>
+              <h3>
+                <span>📍</span> Informazioni di Contatto
+              </h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h5>Indirizzo Studio</h5>
+                  <p>Via Generale De Bernardis, 27<br>74016 Massafra (TA)</p>
+                  <a href="https://maps.google.com/?q=Via+Generale+De+Bernardis+27+Massafra" target="_blank" rel="noopener" style="font-size: 12.5px; color: var(--brand-rose); display: inline-block; margin-top: 4px;">
+                    Apri su Google Maps →
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h5>Telefono & Chiamate</h5>
+                  <a href="tel:3914011503">+39 391 401 1503</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div class="contact-text">
+                  <h5>WhatsApp Ufficiale</h5>
+                  <a href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20informazioni%20DOMINA" target="_blank" rel="noopener">
+                    +39 391 401 1503 (Risposta rapida)
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <h5>Email Ufficiale</h5>
+                  <a href="mailto:dominaclub5@gmail.com">dominaclub5@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); border-radius: var(--radius-sm); padding: 12px 16px; border: 1px solid var(--border-subtle); margin-top: 10px;">
+              <span style="font-size: 13px; color: var(--text-muted);">
+                ✨ <strong>Prima volta da DOMINA?</strong> La prima valutazione e sessione di prova è gratuita e senza impegno.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a class="floating-whatsapp" href="https://wa.me/393914011503?text=Ciao!%20Vorrei%20prenotare%20una%20prova%20gratuita%20da%20DOMINA" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.05.5C6.01.5 1.16 5.35 1.16 11.4c0 2.01.53 3.87 1.46 5.5L.05 23.5l6.83-1.78a11.69 11.69 0 0 0 4.88 1.02c6.05 0 10.9-4.85 10.9-10.9 0-2.92-1.13-5.66-3.29-7.34zM12.05 21.8c-1.88 0-3.66-.49-5.21-1.39l-.37-.22-4.06 1.06 1.08-3.96-.24-.39a9.78 9.78 0 0 1-1.5-5.5c0-5.4 4.4-9.8 9.8-9.8 2.62 0 5.08 1.02 6.93 2.87A9.75 9.75 0 0 1 21.35 12c0 5.4-4.4 9.8-9.8 9.8z"/></svg>
+    <span>Chatta con noi su WhatsApp</span>
+  </a>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container footer-content">
+      <img src="domina-logo-white.png" alt="DOMINA Logo" class="footer-logo" />
+      
+      <p style="color: var(--text-muted); font-size: 14px; max-width: 520px;">
+        DOMINA – Fitness Donna Massafra. Studio specialistico di elettrostimolazione muscolare EMS, Percorso EMS Statico, Corsi in Small Group, Ginnastica Posturale e convenzioni Salute e Benessere a Massafra (TA).
+      </p>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/people/Domina-Allenamento-Donna-Massafra/100063688172960/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/></svg>
+        </a>
+        <a href="https://wa.me/393914011503" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.88 11.88 0 0 0 12.05.5C6.01.5 1.16 5.35 1.16 11.4c0 2.01.53 3.87 1.46 5.5L.05 23.5l6.83-1.78a11.69 11.69 0 0 0 4.88 1.02c6.05 0 10.9-4.85 10.9-10.9 0-2.92-1.13-5.66-3.29-7.34z"/></svg>
+        </a>
+        <a href="tel:3914011503" class="social-btn" aria-label="Telefono">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 DOMINA – Fitness Donna Massafra • Tutti i diritti riservati.
+        </div>
+        <div>
+          Via Generale De Bernardis, 27 – 74016 Massafra (TA) • P.IVA / CF
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
